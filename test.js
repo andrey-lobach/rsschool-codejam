@@ -54,6 +54,6 @@ describe('recursion:', () => {
     const test = recursion({ value: 100,
       left: { value: 32, left: { value: 12 }, right: { value: 90 } },
       right: { value: 13, left: { value: 29 }, right: { value: 36 } } });
-    assert.deepEqual(test, [[32], [12, 13], [12, 90, 29, 36]]);
+    assert.deepEqual(test, [[100], [32, 13], [12, 90, 29, 36]]);
   });
 });
